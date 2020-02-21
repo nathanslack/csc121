@@ -31,12 +31,12 @@ def main():
             choice = input("What would you like to do? ")
 
 
-            if choice == 'Quit':
+            if choice == 'Q':
                 done = True
 
 
             # Status check
-            elif choice == 'Status' or choice =='Status check':
+            elif choice == 'E':
                 print(f"""
                 Miles traveled: {miles_traveled}
                 Drinks in canteen: {canteen}
@@ -45,7 +45,7 @@ def main():
 
 
             # Stopping for the night
-            elif choice == 'Stop for the night':
+            elif choice == 'D':
                 camel_tiredness = 0
                 print("""
                 The camel is very happy.
@@ -54,7 +54,7 @@ def main():
 
 
             # Ahead full speed
-            elif choice == 'Ahead full speed':
+            elif choice == 'C':
                 miles_traveled += random.randrange(10,20)
                 print(f"""
                 You have traveled {miles_traveled} miles.
@@ -81,7 +81,7 @@ def main():
 
 
             # Ahead moderate speed
-            elif choice == 'Ahead moderate speed':
+            elif choice == 'B':
                 miles_traveled += random.randrange(5, 12)
                 print(f"""
                 You have traveled {miles_traveled} miles.
@@ -108,7 +108,7 @@ def main():
                     
 
             # Drink from canteen
-            elif choice == 'Drink from your canteen':
+            elif choice == 'A':
                 if canteen >= 1:
                     canteen -= 1
                     thirst = 0
