@@ -3,7 +3,11 @@ def main():
 
     def print_intro():
         print("""
-        Welcome to the Desert. You must escape.
+        Welcome to Camel!
+
+        In your desperation, you have stolen a camel to make your way across
+        the great Mobi desert.
+        The locals want their camel back and are chasing you down! Survive
         """)
 
         done = False
